@@ -8,6 +8,8 @@ Repository to execute hugo in a docker container.
 
 Building image to execute as a user with your user id and group id inside container
 
+> Default id for user and group is 1001, for both
+
 ```
 docker build --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) -t hugo .
 ```
